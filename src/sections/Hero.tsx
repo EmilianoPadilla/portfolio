@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Hero() {
   return (
-    <section id="home" className="min-h-screen flex flex-col px-6 pt-40">
+    <section id="home" className="min-h-screen flex flex-col px-6 pt-40 pb-8">
         <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full">
         {/* Left side — text */}
         <div className="flex flex-col gap-6 md:w-1/2">

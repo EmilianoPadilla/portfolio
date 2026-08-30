@@ -2,7 +2,7 @@ import { posts } from '../data/posts'
 
 function Posts() {
   return (
-    <section id="posts" className="min-h-screen flex flex-col px-6 pt-30">
+    <section id="posts" className="min-h-screen flex flex-col px-6 pt-30 pb-6">
       <div className="container mx-auto">
 
         {/* Section header */}

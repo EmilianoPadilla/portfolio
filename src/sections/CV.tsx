@@ -2,11 +2,11 @@ import { FiDownload } from 'react-icons/fi';
 
 function CV() {
   return (
-    <section id="cv" className="min-h-screen flex flex-col px-6 pt-30 pb-10">
-      <div className="relative mx-100">
+    <section id="cv" className="min-h-screen flex flex-col px-6 pt-24 pb-10">
+      <div className="relative max-w-5xl mx-auto w-full">
 
         {/* Section header */}
-        <div className="text-center mb-0">
+        <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-white mb-4">
             My{' '}
             <span className="bg-gradient-to-r from-sky-400 to-sky-700 bg-clip-text text-transparent">
@@ -19,32 +19,39 @@ function CV() {
           <div className="w-60 h-1 bg-gradient-to-r from-sky-400 to-sky-700 mx-auto mt-4 rounded-full" />
         </div>
 
-        {/* Download button */}
-        <div className="flex justify-end mb-8">
-            <a
-                href="/Emiliano_Padilla_Resume.pdf"
-                download
-                className="absolute -right-20.5  top-65 
-                    bg-gradient-to-r from-sky-800 to-sky-400 
-                    text-white px-3 py-1 
-                    rounded-l-lg text-base font-bold 
-                    hover:opacity-70 transition-opacity  
-                    flex flex-col items-center gap-0
-                    border-1 border-white/30"
-                    
-                style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
-                >
-                <span style={{ transform: 'rotate(180deg)', display: 'inline-block' }}>
-                    <FiDownload size={24} />
-                </span>
-                Download  ATS 
-                <span> CV
-                </span>
-            </a>
+        {/* Mobile download button — only on mobile */}
+        <div className="md:hidden flex justify-center mb-6 ">
+          <a
+            href="/Emiliano_Padilla_Resume.pdf"
+            download
+            className="flex items-center gap-2 bg-gradient-to-r from-sky-800 to-sky-400 text-white px-6 py-3 rounded-lg font-bold hover:opacity-70 transition-opacity border border-white/30"
+          >
+            <FiDownload size={20} />
+            Download ATS CV
+          </a>
         </div>
 
+        {/* Desktop download button — only on desktop */}
+        <a
+          href="/Emiliano_Padilla_Resume.pdf"
+          download
+          className="hidden md:flex absolute -right-14.5 top-65
+            bg-gradient-to-r from-sky-800 to-sky-400
+            text-white px-3 py-1
+            rounded-l-lg text-base font-bold
+            hover:opacity-70 transition-opacity
+            flex-col items-center gap-0
+            border border-white/30"
+          style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
+        >
+          <span style={{ transform: 'rotate(180deg)', display: 'inline-block' }}>
+            <FiDownload size={24} />
+          </span>
+          Download ATS CV
+        </a>
+
         {/* CV Content */}
-        <div className="bg-[#111827] border border-gray-800 rounded-xl p-8 md:p-12 flex flex-col gap-10 ">
+        <div className="bg-[#111827] border border-gray-800 rounded-xl p-6 md:p-12 flex flex-col gap-10">
 
           {/* Summary */}
           <div>
@@ -117,7 +124,7 @@ function CV() {
                   stack: 'React, TypeScript, TanStack Query, React Router, Tailwind CSS, Zod',
                   bullets: [
                     'Multi-page movie search app consuming the OMDb REST API with debounced search.',
-                    'Implemented infinite scroll pagination using TanStack Query\'s useInfiniteQuery.',
+                    "Implemented infinite scroll pagination using TanStack Query's useInfiniteQuery.",
                     'Built custom hooks: useDebounce, useLocalStorage, useMediaQuery.',
                   ],
                 },
@@ -174,7 +181,7 @@ function CV() {
                 },
               ].map((job) => (
                 <div key={job.title}>
-                  <div className="flex justify-between items-start">
+                  <div className="flex justify-between items-start flex-wrap gap-2">
                     <div>
                       <h4 className="text-white font-bold">{job.title}</h4>
                       <p className="text-sky-400 text-sm">{job.company}</p>
@@ -199,7 +206,7 @@ function CV() {
             <h3 className="text-xl font-bold text-white mb-4 pb-2 border-b border-gray-700">
               Education
             </h3>
-            <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start flex-wrap gap-2">
               <div>
                 <h4 className="text-white font-bold">Bachelor of Science in Earth Sciences</h4>
                 <p className="text-sky-400 text-sm">National Autonomous University of Mexico (UNAM)</p>

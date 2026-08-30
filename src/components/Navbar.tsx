@@ -31,7 +31,7 @@ function Navbar() {
 
         {/* Logo */}
         <Link to="/">
-          <span className="text-4xl font-bold bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent -ml-4">
+          <span className="text-4xl font-bold bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent ">
             Portfolio
           </span>
         </Link>
@@ -55,7 +55,7 @@ function Navbar() {
 
         {/* Hamburger — mobile only */}
         <button
-          className="md:hidden text-white text-2xl"
+          className="md:hidden text-white text-4xl"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? '✕' : '☰'}
