@@ -10,7 +10,7 @@ function Contact() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
             Get In{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sky-400 to-sky-700 bg-clip-text text-transparent">
               Touch
             </span>
           </h2>
@@ -18,7 +18,7 @@ function Contact() {
             I'm currently open to new opportunities. Whether you have a question,
             a project in mind, or just want to say hi — my inbox is always open!
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-4 rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-sky-400 to-sky-700 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Content */}
@@ -74,7 +74,7 @@ function Contact() {
           <div className="text-center">
             <a
               href="mailto:emilianopadillarobles@gmail.com"
-              className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-opacity text-lg"
+              className="inline-block bg-gradient-to-r from-sky-400 to-sky-700 text-white px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-opacity text-lg"
             >
               Send me an email
             </a>

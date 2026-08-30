@@ -12,7 +12,7 @@ function Hero() {
           <div>
             <h1 className="text-5xl md:text-6xl font-bold mb-2">
             Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent">
                 Emiliano
             </span>
             <span className="text-5xl md:text-6xl font-bold mb-2">
@@ -33,13 +33,13 @@ function Hero() {
           <div className="flex gap-4 flex-wrap">
             <a
               href="#projects"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+                className="bg-gradient-to-r from-sky-400 to-sky-700 text-white px-6 py-3 rounded-lg font-medium hover:opacity-70 transition-opacity"
                 >
               View Projects
             </a>
             <a
               href="#contact"
-              className="border border-blue-400 text-blue-400 px-6 py-3 rounded-lg font-medium hover:bg-blue-400/10 transition-colors"
+              className="border border-blue-400 text-blue-400 px-6 py-3 rounded-lg font-medium hover:bg-blue-400/20 transition-colors"
             >
               Contact Me
             </a>
@@ -84,7 +84,7 @@ function Hero() {
               />
             </div>
             {/* Decorative blur behind photo */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 blur-3xl opacity-20 -z-10" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-300 to-sky-700 blur-3xl opacity-20 -z-10" />
           </div>
         </div>
 

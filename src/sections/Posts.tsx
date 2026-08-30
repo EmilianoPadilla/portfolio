@@ -9,14 +9,14 @@ function Posts() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
             My{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sky-400 to-sky-700 bg-clip-text text-transparent">
               Posts
             </span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
             Updates, announcements, and thoughts from my journey as a developer.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-4 rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-sky-400 to-sky-700 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Posts */}

@@ -31,7 +31,7 @@ function Navbar() {
 
         {/* Logo */}
         <Link to="/">
-          <span className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent -ml-4">
+          <span className="text-4xl font-bold bg-gradient-to-r from-sky-400 to-sky-700 bg-clip-text text-transparent -ml-4">
             Portfolio
           </span>
         </Link>

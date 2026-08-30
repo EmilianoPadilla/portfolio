@@ -9,14 +9,14 @@ function CV() {
         <div className="text-center mb-0">
           <h2 className="text-4xl font-bold text-white mb-4">
             My{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-sky-400 to-sky-700 bg-clip-text text-transparent">
               CV
             </span>
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
             My professional background, skills, and experience.
           </p>
-          <div className="w-60 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-4 rounded-full" />
+          <div className="w-60 h-1 bg-gradient-to-r from-sky-400 to-sky-700 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Download button */}
@@ -24,9 +24,9 @@ function CV() {
             <a
                 href="/Emiliano_Padilla_Resume.pdf"
                 download
-                className="absolute -right-18.5  top-65 
+                className="absolute -right-20.5  top-65 
                     bg-gradient-to-r from-red-800 to-red-600 
-                    text-white px-3 py-3 
+                    text-white px-3 py-1 
                     rounded-l-lg text-base font-bold 
                     hover:opacity-70 transition-opacity  
                     flex flex-col items-center gap-0
@@ -37,7 +37,9 @@ function CV() {
                 <span style={{ transform: 'rotate(180deg)', display: 'inline-block' }}>
                     <FiDownload size={24} />
                 </span>
-                Download CV
+                Download  ATS 
+                <span> CV
+                </span>
             </a>
         </div>
 
