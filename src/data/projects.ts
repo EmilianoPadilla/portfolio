@@ -26,14 +26,15 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/EmilianoPadilla',
   },
 
-  {
+ {
   title: 'Movie Browser',
   description:
     'A multi-page movie search application consuming the OMDb REST API with real-time debounced search, infinite scroll pagination, and custom hooks for reusable logic across components.',
   tech: ['React', 'TypeScript', 'TanStack Query', 'React Router', 'Tailwind CSS', 'Zod'],
+  liveUrl: 'https://moviebrowser.emilianopadilla.com',
   githubUrl: 'https://github.com/EmilianoPadilla/movie-browser',
-  },
-  
+},
+
   {
   title: 'School Management API',
   description:
