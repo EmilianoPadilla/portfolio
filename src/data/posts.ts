@@ -1,6 +1,7 @@
 export interface Post {
   date: string
   content: string
+  link?: { text: string; url: string; prefix?: string }
   tags?: string[]
 }
 
@@ -13,9 +14,12 @@ Over the past few months I've been building a full stack e-commerce marketplace 
 
 Features: product browsing, real-time search, category filtering, persistent cart, JWT authentication, and seller functionality.
 
-Tech stack: React · TypeScript · FastAPI · PostgreSQL · Supabase · Tailwind CSS
-
-Check it out: https://obolus-by-emilianopadilla.vercel.app`,
+Tech stack: React · TypeScript · FastAPI · PostgreSQL · Supabase · Tailwind CSS`,
+    link: {
+      text: 'obolus-by-emilianopadilla.vercel.app',
+      url: 'https://obolus-by-emilianopadilla.vercel.app',
+      prefix: 'Check out Obolus here: ',
+    },
     tags: ['#FullStack', '#React', '#FastAPI', '#OpenToWork'],
   },
 ]

@@ -34,6 +34,21 @@ function Posts() {
                 {post.content}
               </p>
 
+              {/* Link */}
+              {post.link && (
+              <p className="text-gray-300">
+                {post.link.prefix}
+                <a
+                  href={post.link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-400 hover:text-sky-300 transition-colors font-medium"
+                >
+                  {post.link.text}
+                </a>
+              </p>
+              )}
+
               {/* Tags */}
               {post.tags && (
                 <div className="flex flex-wrap gap-2">
