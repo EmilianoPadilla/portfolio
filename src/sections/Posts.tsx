@@ -24,7 +24,7 @@ function Posts() {
           {posts.map((post, index) => (
             <div
               key={index}
-              className="bg-[#111827] border border-gray-800 rounded-xl p-6 flex flex-col gap-4 hover:border-sky-300/50 transition-colors duration-300"
+              className="bg-[#111827] border border-gray-800 rounded-xl p-6 flex flex-col gap-4 hover:border-blue-500/50 transition-colors duration-300"
             >
               {/* Date */}
               <span className="text-sky-400 text-sm font-medium">{post.date}</span>

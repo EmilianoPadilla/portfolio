@@ -9,14 +9,14 @@ import photo10 from '../assets/photo10.jpeg'
 import photo11 from '../assets/photo11.jpeg'
 
 const photos = [
-  { src: photo9, alt: 'Emiliano Padilla' },
-  { src: photo2, alt: 'Emiliano Padilla' },
-  { src: photo6, alt: 'Emiliano Padilla' },
-  { src: photo5, alt: 'Emiliano Padilla' },
-  { src: photo10, alt: 'Emiliano Padilla' },
-  { src: photo8, alt: 'Emiliano Padilla' },
-  { src: photo11, alt: 'Emiliano Padilla' },
-  { src: photo4, alt: 'Emiliano Padilla' },
+  { src: photo9, alt: 'In Canada' },
+  { src: photo2, alt: 'Looking at the sunset' },
+  { src: photo6, alt: 'At UNAM' },
+  { src: photo5, alt: 'In Holland' },
+  { src: photo10, alt: 'With other teachers' },
+  { src: photo8, alt: 'With students' },
+  { src: photo11, alt: 'At the Botanical Garden' },
+  { src: photo4, alt: 'Graduation day' },
 ]
 
 function About() {
