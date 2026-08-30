@@ -49,17 +49,28 @@ function About() {
         {/* Mobile text */}
         <div className="flex flex-col gap-4">
           <p className="text-gray-300 leading-relaxed">
-            I'm a Full Stack Developer based in Puerto Vallarta, Mexico. I come from an
-            unconventional path — Earth Sciences at UNAM, teaching, and technical support
-            at Pandora — which shaped how I think about systems, communication, and problem-solving.
+            Hello! My name is Emiliano Padilla Robles, I'm a Full Stack Developer based in Puerto Vallarta, 
+            with a strong backend foundation in Python, FastAPI, PostgreSQL, and Docker — 
+            now building complete applications from database to deployed UI.
+
+            
+          </p>
+
+          <p className="text-gray-300 leading-relaxed">
+            As for myself, I come from an unconventional path — I studied Earth Sciences at UNAM and I've had a variety of different jobs - from Teacher to QA at Pandora - 
+            which shaped how I think about systems, communication, and problem-solving. 
+            I transitioned into software through hands-on building, different courses and through self made projects.
+
+            I recently deployed Obolus, a full stack e-commerce marketplace where users can buy, sell, and manage products (no transactions are allowed since it is merely an educational project). 
+            I'm very proud to say I built both the Frontend and Backend using a variety of technologies and tools.
+
+            What I've been enjoying the most lately: designing, building products that actually work end to end and see them evolve into something I'm proud of, 
+            and of course, a good cup of coffee. ☕
+ 
+            
           </p>
           <p className="text-gray-300 leading-relaxed">
-            I transitioned into software through hands-on building, not bootcamps.
-            What I enjoy most is designing clean APIs, thinking through data models,
-            and building products that work end to end — from database to deployed UI.
-          </p>
-          <p className="text-gray-300 leading-relaxed">
-            Currently open to junior backend, full stack, or SRE opportunities. Remote-friendly.
+            I'm open to junior backend, full stack, or SRE opportunities. Remote-friendly but also open to relocate.
           </p>
 
           <div className="grid grid-cols-1 gap-3 pt-2">
@@ -123,17 +134,33 @@ function About() {
           {/* Right side — text */}
           <div className="flex-1 flex flex-col gap-6 pt-0 pl-130 pr-100">
             <p className="text-gray-300 leading-relaxed text-lg">
-              I'm a Full Stack Developer based in Puerto Vallarta, Mexico. I come from an
-              unconventional path — Earth Sciences at UNAM, teaching, and technical support
-              at Pandora — which shaped how I think about systems, communication, and problem-solving.
+            Hello! My name is Emiliano Padilla Robles, I'm a Full Stack Developer based in Puerto Vallarta, 
+            with a strong backend foundation in Python, FastAPI, PostgreSQL, and Docker — 
+            now building complete applications from database to deployed UI.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed text-lg">
+              As for myself, I come from an unconventional path — I studied Earth Sciences at UNAM and I've had a variety of different jobs. I've been a Geography, English and biology Teacher;
+              I've worked as QA at Pandora, I've done scientific research, I've worked as a biologist at Puerto Vallarta's botanical garden and I've had all kinds of different jobs during the hollidays.
+            </p>
+            
+            <p className="text-gray-300 leading-relaxed text-lg">
+              All of this has shaped how I think about systems, communication, and problem-solving. From being able to explain complex topics in a basic and easy to understand way, 
+              thanks to my time as a teacher; to being able to understand both sides of a software product - thanks to my time working with clients at Pandora and by developing apps myself.
+            </p>
+
+            <p className="text-gray-300 leading-relaxed text-lg">
+              This last year I transitioned into software through hands-on building, different courses and through self made projects.
+              I recently deployed Obolus, a full stack e-commerce marketplace where users can buy, sell, and manage products (no transactions are allowed since it is merely an educational project). 
+              I'm very proud to say I built both the Frontend and Backend using a variety of technologies and tools.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg">
-              I transitioned into software through hands-on building, not bootcamps.
-              What I enjoy most is designing clean APIs, thinking through data models,
-              and building products that work end to end — from database to deployed UI.
+              This is what I've been enjoying the most lately: designing, building products that actually work end to end and see them evolve into something I'm proud of, feeling that I'm growing 
+              both in a professional and personal way, and of course, a good cup of coffee. ☕
             </p>
+
             <p className="text-gray-300 leading-relaxed text-lg">
-              Currently open to junior backend, full stack, or SRE opportunities. Remote-friendly.
+              I'm open to junior backend, full stack, or SRE opportunities. Remote-friendly but also open to relocate.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-2">

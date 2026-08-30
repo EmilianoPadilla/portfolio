@@ -2,44 +2,76 @@ import { Mail } from 'lucide-react'
 import photo from '../assets/myphoto.jpeg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-
 function Hero() {
   return (
     <section id="home" className="min-h-screen flex flex-col px-6 pt-40 pb-8">
-        <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full">
+
         {/* Left side — text */}
         <div className="flex flex-col gap-6 md:w-1/2">
           <div>
             <h1 className="text-5xl md:text-6xl font-bold mb-2">
-            Hi, I'm{' '}
-            <span className="bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent">
+              Hi, I'm{' '}
+              <span className="bg-gradient-to-r from-sky-300 to-sky-700 bg-clip-text text-transparent">
                 Emiliano
-            </span>
-            <span className="text-5xl md:text-6xl font-bold mb-2">
-                !
-            </span>
+              </span>
+              !
             </h1>
             <h2 className="text-2xl text-gray-300 font-medium">
               Full Stack Developer
             </h2>
+            <p className="text-sky-400 text-sm font-medium mt-1">
+              Based in Puerto Vallarta, Mexico | Open to work
+            </p>
           </div>
 
-          <p className="text-gray-400 text-lg leading-relaxed max-w-md">
-            I build complete web applications from database to deployed UI.
-            Passionate about clean APIs, scalable systems, and great user experiences.
+        <div className="flex flex-col gap-2">
+          <p className="text-gray-400 text-lg leading-relaxed text-justify mb-0 pb-0">
+            I went from studying Earth Sciences at UNAM, to working as a biologist, to QA at Pandora, to being a teacher, all the way
+            to building full stack applications with Python, FastAPI, React, and PostgreSQL.
           </p>
+          <p className="text-gray-400 text-lg leading-relaxed text-justify mt-0 pt-0">
+            I learn by shipping — check out{' '}
+            <a
+              href="https://obolus-by-emilianopadilla.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-400 hover:text-sky-300 underline underline-offset-2"
+            >
+              Obolus
+            </a>
+            , a marketplace I built and deployed from scratch.
+          </p>
+        </div>
+        
+          {/* Quick stats */}
+          <div className="flex gap-8 pt-2">
+            <div>
+              <p className="text-sky-500 text-sm">Projects deployed:</p>
+              <p className="text-1xl font-bold text-white text-center">4+</p>
+              
+            </div>
+            <div>
+              <p className="text-sky-500 text-sm">Languages</p>
+              <p className="text-1xl font-bold text-white text-center">3</p>
+            </div>
+            <div>
+              <p className="text-sky-500 text-sm">Coffee consumed:</p>
+              <p className="text-1xl font-bold text-white text-center">A lot</p>
+            </div>
+          </div>
 
           {/* Buttons */}
           <div className="flex gap-4 flex-wrap">
             <a
-              href="#projects"
-                className="bg-gradient-to-r from-sky-400 to-sky-700 text-white px-6 py-3 rounded-lg font-medium hover:opacity-70 transition-opacity"
-                >
+              href="/projects"
+              className="bg-gradient-to-r from-sky-400 to-sky-700 text-white px-6 py-3 rounded-lg font-medium hover:opacity-70 transition-opacity"
+            >
               View Projects
             </a>
             <a
-              href="#contact"
-              className="border border-blue-400 text-blue-400 px-6 py-3 rounded-lg font-medium hover:bg-blue-400/20 transition-colors"
+              href="/contact"
+              className="border border-sky-400 text-sky-400 px-6 py-3 rounded-lg font-medium hover:bg-sky-400/20 transition-colors"
             >
               Contact Me
             </a>
@@ -75,15 +107,13 @@ function Hero() {
         {/* Right side — photo */}
         <div className="md:w-1/2 flex justify-center">
           <div className="relative">
-            {/* Gradient ring around photo */}
-            <div className="w-72 h-72 md:w-120 md:h-120 ">
+            <div className="w-72 h-72 md:w-120 md:h-120">
               <img
                 src={photo}
                 alt="Emiliano Padilla"
                 className="w-full h-full rounded-full object-cover"
               />
             </div>
-            {/* Decorative blur behind photo */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-300 to-sky-700 blur-3xl opacity-20 -z-10" />
           </div>
         </div>
