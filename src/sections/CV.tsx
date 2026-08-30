@@ -2,7 +2,7 @@ import { FiDownload } from 'react-icons/fi';
 
 function CV() {
   return (
-    <section id="cv" className="min-h-screen flex flex-col px-6 pt-25 pb-10">
+    <section id="cv" className="min-h-screen flex flex-col px-6 pt-30 pb-10">
       <div className="relative mx-100">
 
         {/* Section header */}
@@ -25,7 +25,7 @@ function CV() {
                 href="/Emiliano_Padilla_Resume.pdf"
                 download
                 className="absolute -right-20.5  top-65 
-                    bg-gradient-to-r from-red-800 to-red-600 
+                    bg-gradient-to-r from-sky-800 to-sky-400 
                     text-white px-3 py-1 
                     rounded-l-lg text-base font-bold 
                     hover:opacity-70 transition-opacity  
@@ -77,7 +77,7 @@ function CV() {
                 { label: 'System Design', value: 'Distributed systems, Redis, Kafka, load balancing, horizontal scaling' },
               ].map((skill) => (
                 <div key={skill.label}>
-                  <span className="text-blue-400 font-medium text-sm">{skill.label}: </span>
+                  <span className="text-sky-400 font-medium text-sm">{skill.label}: </span>
                   <span className="text-gray-400 text-sm">{skill.value}</span>
                 </div>
               ))}
@@ -124,11 +124,11 @@ function CV() {
               ].map((project) => (
                 <div key={project.title}>
                   <h4 className="text-white font-bold">{project.title}</h4>
-                  <p className="text-blue-400 text-xs italic mb-2">{project.stack}</p>
+                  <p className="text-sky-400 text-xs italic mb-2">{project.stack}</p>
                   <ul className="flex flex-col gap-1">
                     {project.bullets.map((bullet, i) => (
                       <li key={i} className="text-gray-400 text-sm flex gap-2">
-                        <span className="text-blue-400 mt-1">•</span>
+                        <span className="text-sky-400 mt-1">•</span>
                         {bullet}
                       </li>
                     ))}
@@ -177,14 +177,14 @@ function CV() {
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="text-white font-bold">{job.title}</h4>
-                      <p className="text-blue-400 text-sm">{job.company}</p>
+                      <p className="text-sky-400 text-sm">{job.company}</p>
                     </div>
                     <span className="text-gray-500 text-sm">{job.dates}</span>
                   </div>
                   <ul className="flex flex-col gap-1 mt-2">
                     {job.bullets.map((bullet, i) => (
                       <li key={i} className="text-gray-400 text-sm flex gap-2">
-                        <span className="text-blue-400 mt-1">•</span>
+                        <span className="text-sky-400 mt-1">•</span>
                         {bullet}
                       </li>
                     ))}
@@ -202,7 +202,7 @@ function CV() {
             <div className="flex justify-between items-start">
               <div>
                 <h4 className="text-white font-bold">Bachelor of Science in Earth Sciences</h4>
-                <p className="text-blue-400 text-sm">National Autonomous University of Mexico (UNAM)</p>
+                <p className="text-sky-400 text-sm">National Autonomous University of Mexico (UNAM)</p>
               </div>
               <span className="text-gray-500 text-sm">2014–2019</span>
             </div>

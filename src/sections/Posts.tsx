@@ -2,7 +2,7 @@ import { posts } from '../data/posts'
 
 function Posts() {
   return (
-    <section id="posts" className="min-h-screen flex flex-col px-6 pt-25">
+    <section id="posts" className="min-h-screen flex flex-col px-6 pt-30">
       <div className="container mx-auto">
 
         {/* Section header */}
@@ -24,10 +24,10 @@ function Posts() {
           {posts.map((post, index) => (
             <div
               key={index}
-              className="bg-[#111827] border border-gray-800 rounded-xl p-6 flex flex-col gap-4 hover:border-blue-500/50 transition-colors duration-300"
+              className="bg-[#111827] border border-gray-800 rounded-xl p-6 flex flex-col gap-4 hover:border-sky-300/50 transition-colors duration-300"
             >
               {/* Date */}
-              <span className="text-blue-400 text-sm font-medium">{post.date}</span>
+              <span className="text-sky-400 text-sm font-medium">{post.date}</span>
 
               {/* Content */}
               <p className="text-gray-300 leading-relaxed whitespace-pre-line">
@@ -38,7 +38,7 @@ function Posts() {
               {post.tags && (
                 <div className="flex flex-wrap gap-2">
                   {post.tags.map((tag) => (
-                    <span key={tag} className="text-blue-400 text-sm font-medium">
+                    <span key={tag} className="text-sky-400 text-sm font-medium">
                       {tag}
                     </span>
                   ))}

@@ -21,17 +21,17 @@ const photos = [
 
 function About() {
   return (
-    <section id="about" className="min-h-screen flex flex-col pt-25 pb-10">
+    <section id="about" className="min-h-screen flex flex-col pt-30 pb-10">
 
       {/* Section header */}
-      <div className="text-left mb-8 ml-180 pl-12">
+      <div className="text-left mb-8 ml-190 pl-12">
         <h2 className="text-4xl font-bold text-white mb-4">
           About{' '}
           <span className="bg-gradient-to-r from-sky-400 to-sky-700 bg-clip-text text-transparent">
             Me
           </span>
         </h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-sky-400 to-sky-700 mt-4 rounded-full" />
+        <div className="w-44 h-1 bg-gradient-to-r from-sky-400 to-sky-700 mt-4 rounded-full" />
       </div>
 
       {/* Main content — full width, no padding on left */}
@@ -56,7 +56,7 @@ function About() {
         </div>
 
         {/* Right side — text */}
-        <div className="flex-1 flex flex-col gap-6 pt-0 pl-120 pr-40">
+        <div className="flex-1 flex flex-col gap-6 pt-0 pl-130 pr-100">
           <p className="text-gray-300 leading-relaxed text-lg">
             I'm a Full Stack Developer based in Puerto Vallarta, Mexico. I come from an
             unconventional path — Earth Sciences at UNAM, teaching, and technical support
@@ -81,7 +81,7 @@ function About() {
               { label: 'Availability', value: 'Open to opportunities' },
             ].map((item) => (
               <div key={item.label}>
-                <span className="text-blue-400 font-medium text-sm">{item.label}: </span>
+                <span className="text-sky-400 font-medium text-sm">{item.label}: </span>
                 <span className="text-gray-400 text-sm">{item.value}</span>
               </div>
             ))}

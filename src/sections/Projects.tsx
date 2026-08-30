@@ -4,7 +4,7 @@ import { projects } from '../data/projects'
 
 function Projects() {
   return (
-    <section id="projects" className="min-h-screen flex flex-col px-6 pt-40">
+    <section id="projects" className="min-h-screen flex flex-col px-6 pt-30">
       <div className="container mx-auto">
 
         {/* Section header */}
