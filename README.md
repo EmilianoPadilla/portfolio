@@ -1,75 +1,50 @@
-# React + TypeScript + Vite
+# Emiliano Padilla — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website built with React, TypeScript, and Tailwind CSS. Features a multi-page layout with sections for projects, CV, posts, about, and contact.
 
-Currently, two official plugins are available:
+🌐 **Live site:** [emilianopadilla.com](https://emilianopadilla.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Sections
+- **Home** — Hero section with intro, stats, and social links
+- **Projects** — Deployed projects with tech stack and live demo links
+- **CV** — Full resume with downloadable ATS-friendly PDF
+- **Posts** — Developer updates and announcements
+- **About** — Background, photos, and contact details
+- **Contact** — Email, GitHub, and LinkedIn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **React** + **TypeScript**
+- **Tailwind CSS**
+- **Vite**
+- **React Router** — multi-page navigation
+- **Framer Motion** — animations
+- **Lucide React** + **React Icons** — icons
+- **Cloudflare Pages** — deployment
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+## Running Locally
+```bash
+git clone https://github.com/EmilianoPadilla/portfolio.git
+cd portfolio
+npm install
+npm run dev
 ```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Deployment
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Deployed on **Cloudflare Pages** with automatic deployments on every push to `main`.
 
-```
+---
+
+## Contact
+- 📧 emilianopadillarobles@gmail.com
+- 💼 [linkedin.com/in/emiliano-padilla-robles](https://linkedin.com/in/emiliano-padilla-robles)
+- 🐙 [github.com/EmilianoPadilla](https://github.com/EmilianoPadilla)
